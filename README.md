@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution URL here](https://github.com/tehseen01/3-column-preview-card-component.git)
-- Live Site URL: [Live site URL here](https://codebyishan-3column-preview-card.netlify.app/)
+- Live Site URL: [Live site URL here](https://codebyishan-3column-preview-card.netlify.app)
 
 ### Built with
 
