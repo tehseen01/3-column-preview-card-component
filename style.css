@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    --card1-color: hsl(31, 77%, 52%);
+    --card2-color: hsl(184, 100%, 22%);
+    --card3-color: hsl(179, 100%, 13%);
+    --pera-color: hsla(0, 0%, 100%, 0.75);
+    --bg-color: hsl(0, 0%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    max-width: 60rem;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.container > :first-child {
+    background-color: var(--card1-color);
+}
+
+.container > :nth-child(2) {
+    background-color: var(--card2-color);
+}
+
+.container > :last-child {
+    background-color: var(--card3-color);
+}
+
+.container> :first-child .btn {
+    color: var(--card1-color);
+}
+
+.container> :nth-child(2) .btn {
+    color: var(--card2-color);
+}
+
+.container> :last-child .btn {
+    color: var(--card3-color);
+}
+
+.card {
+    padding: 2.6rem;
+}
+
+.title {
+    font-family: 'Big Shoulders Display', sans-serif;
+    color: var(--bg-color);
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin: 1.5rem 0;
+}
+
+.desc {
+    color: var(--pera-color);
+    margin: 1rem 0;
+    font: 400 15px/1.8 "Lexend Deca", sans-serif;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    background-color: var(--bg-color);
+    text-transform: capitalize;
+    font-size: 1rem;
+    margin-top: 2rem;
+    border: 2px solid #fff;
+    transition: all 300ms ease;
+    cursor: pointer;
+}
+
+.container> :first-child .btn:hover {
+    background-color: var(--card1-color);
+    color: #fff;
+}
+
+.container> :nth-child(2) .btn:hover {
+    background-color: var(--card2-color);
+    color: #fff;
+}
+
+.container> :last-child .btn:hover {
+    background-color: var(--card3-color);
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: block;
+        max-width: 20rem;
+    }
+
+    .card {
+        padding: 2rem;
+    }
+
+    .btn {
+        margin-top: 0;
+    }
+}
